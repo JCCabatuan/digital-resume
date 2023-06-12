@@ -20,7 +20,7 @@ def load_lottiefile(filepath: str):
 
 lottie_computer = load_lottiefile("lottiefiles/lottie.json")
 lottie_chart = load_lottiefile("lottiefiles/8517-charts.json")
-lottie_process_auto = load_lottiefile("lottiefiles/pocauto.json")
+lottie_process_auto = load_lottiefile("lottiefiles/automate2.json")
 lottie_machine_learn = load_lottiefile("lottiefiles/ai.json")
 
 
@@ -88,22 +88,26 @@ st.markdown("---")
 
 col_data_analysis, col_analysis_desc = st.columns(2)
 with col_data_analysis:
-    st_lottie(lottie_chart,speed=2,loop=True,quality="high")
+    st_lottie(lottie_chart,speed=2,loop=True,quality="high",height=500,width=1000)
 with col_analysis_desc:
     st.subheader("Data Analysis Projects:")
-
+    st.write("Click the link below!\n")
+    st.markdown('[🌐Data Ploting the 2022 Philippine Population🌐](https://python-data-analysis.onrender.com)')
 st.write("\n")
 
 col_aimac_des, col_aimac = st.columns(2)
 with col_aimac_des:
-    st.subheader("Machine Learning Projects:")
+    st_lottie(lottie_machine_learn, speed=2, loop=True, quality="high",height=500,width=1000)
 with col_aimac:
-    st_lottie(lottie_machine_learn, speed=2, loop=True,quality="high")
-
+    st.subheader("Machine Learning Projects:")
+    st.write("Click the link below!\n")
+    st.markdown("🌐Coming Soon!🌐")
 st.write("\n")
 
 col_procauto, col_procauto_des = st.columns(2)
 with col_procauto:
-    st_lottie(lottie_process_auto,speed=2,loop=True,quality="high")
+    st_lottie(lottie_process_auto,speed=2,loop=True,quality="high",height=500,width=1000)
 with col_procauto_des:
     st.subheader("Python Process Automation Projects:")
+    st.write("Click the link below!\n")
+    st.markdown("🌐Coming Soon!🌐")
